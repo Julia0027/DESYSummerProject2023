@@ -1,0 +1,110 @@
+# configuration.yaml file
+#This code has been inspired by sample codes provided at DESY.
+#If none of the legend and text set-ups need to be changed, then only the LEGEND section for each configuration will need to be modified (whatever we type will appear as the legend on the plots).
+#This sample code is for comparing five simulations (the first one being alpha, which we use as the reference configuration to compute the PPUT values). If more configurations need to be compared, just copy paste the code as many times as needed.
+MAINOPTIONS:
+    PLOT_IRF_COMPARISON: True
+    OUTPUT_IRF_FOLDER: 'IRF_Files/'    
+    OUTPUT_PLOT_FOLDER: 'Figures/'
+
+DL2-INPUTS:
+
+  - OPTIMIZE-PYIRF-FILE-NO : 1
+    TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
+    TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
+    TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
+    OBS-TIME: {value: 5.0, unit: hour}   #This must be the same value with wich I run the python file
+    SENSITIVITYMETHOD: 'gammapy' # fromhdu
+    PLOTCOLOR: 'red'
+    MARKERTYPE: 's'
+    LEGEND: '(alpha) 4LST and 09MST '
+
+  - OPTIMIZE-PYIRF-FILE-NO : 2
+    TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
+    TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
+    TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
+    OBS-TIME: {value: 5.0, unit: hour} #This must be the same value with wich I run the python file
+    SENSITIVITYMETHOD: 'gammapy' # fromhdu
+    PLOTCOLOR: 'purple'
+    MARKERTYPE: 's'
+    LEGEND: '  (-complementary)'
+
+  - OPTIMIZE-PYIRF-FILE-NO : 3  
+    TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
+    TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
+    TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
+    OBS-TIME: {value: 5.0, unit: hour}   #This must be the same value with wich I run the python file
+    SENSITIVITYMETHOD: 'gammapy' # fromhdu
+    PLOTCOLOR: 'orange'
+    MARKERTYPE: 's'
+    LEGEND: '  (-complementary)'
+
+  - OPTIMIZE-PYIRF-FILE-NO : 4  
+    TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
+    TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
+    TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
+    OBS-TIME: {value: 5.0, unit: hour}   #This must be the same value with wich I run the python file
+    SENSITIVITYMETHOD: 'gammapy' # fromhdu
+    PLOTCOLOR: 'green'
+    MARKERTYPE: 's'
+    LEGEND: '  (-complementary)'
+
+  - OPTIMIZE-PYIRF-FILE-NO : 5  
+    TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
+    TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
+    TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
+    OBS-TIME: {value: 5.0, unit: hour}   #This must be the same value with wich I run the python file
+    SENSITIVITYMETHOD: 'gammapy' # fromhdu
+    PLOTCOLOR: 'aquamarine'
+    MARKERTYPE: 's'
+    LEGEND: '  (-complementary)'
+
+
+# pyirf optimization configurations
+# see https://cta-observatory.github.io/pyirf/index.html for more info
+GENERALOPTIONS: 
+    OFF_REGIONS: 5
+    MAX_BG_RADIUS: {value: 1.0, unit: deg}
+    INITIAL_GH_CUT_EFFICENCY: 0.4
+    MAX_GH_CUT_EFFICIENCY: 0.8
+    GH_CUT_EFFICIENCY_STEP: 0.01
+    ENERGY-MIN: {value: 0.012, unit: TeV}
+    ENERGY-MAX: {value: 200.0, unit: TeV}
+    TRUE_ENERGY_BINS_PER_DECADE: 10
+    RECO_ENERGY_BINS_PER_DECADE: 5
+    ENERGY_MIGRATION_BINS: 200
+    OFFSET-ANGLE: {value: 0.0, unit: deg}
+    THETA_BINS: 50
+    THETACUT_MIN_VALUE: {value: 0.056683686, unit: deg}
+    THETACUT_MAX_VALUE: {value: 0.2891592, unit: deg}
+    THETACUT_FILL_VALUE: {value: 0.2891592, unit: deg}
+    THETACUT_PERCENTILE: 68.0
+
+# Figure options
+# CONSTRAINED : Matplotlib constrained_layout option
+# FIGSIZE : Definition of the figure size
+# FONTSIZE : Fontsize used in the figure
+# BOX-SHAPED : Reshapes the small subfigures as a box
+# INVERSE-SENSITIVITY-RATIO : Gives a ratio > 1 for higher sensitivity
+# FIXED-RANGE-RATIO : Fixes the rage of ratio subfigures as defined in FIXED-RANGE-VALUE
+# FIXED-RANGE-VALUE : Define the range of ratio subfigures 
+# CONTROL-ANG-ENG-RES-RANGE : Makes available the use of ENG-RES-RANGE and ANG-RES-RANGE and fixes the defined ranges
+# ENG-RES-RANGE : User defined energy resolution range
+# ANG-RES-RANGE : User defined angular resolution range
+# USE-Y-AXIS-FORMAT: Controls tick label formatting for SensRatio, Energy & Angular Res
+# Y-AXIS-FORMAT: Controls number of digits shown in axes, works only for SensRatio, Energy & Angular Resolution
+FIGUREOPTIONS:
+    CONSTRAINED: True
+    FIGSIZE: [22,18]
+    FONTSIZE: 15
+    BOX-SHAPED: True
+    INVERSE-SENSITIVITY-RATIO: False
+    FIXED-RANGE-RATIO: True 
+    FIXED-RANGE-VALUE: [0,3.5]
+    CONTROL-ANG-ENG-RES-RANGE: True
+    ENG-RES-RANGE: [0.0, 0.3]
+    ANG-RES-RANGE: [0.0, 0.3]
+    USE-Y-AXIS-FORMAT: True 
+    Y-AXIS-FORMAT: '.2f' 
+    OUTPUT_FIGURE_NAME: 'test_output_figure.pdf'
+    FIGURE_DPI: 300        
