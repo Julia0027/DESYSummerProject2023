@@ -3,6 +3,7 @@
 #If none of the legend and text set-ups need to be changed, then only the LEGEND section for each configuration will need to be modified (whatever we type will appear as the legend on the plots).
 #This sample code is for comparing five simulations (the first one being alpha, which we use as the reference configuration to compute the PPUT values). If more configurations need to be compared, 
 #just copy paste the code as many times as needed.
+
 MAINOPTIONS:
     PLOT_IRF_COMPARISON: True
     OUTPUT_IRF_FOLDER: 'IRF_Files/'    
