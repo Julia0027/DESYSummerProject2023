@@ -1,5 +1,5 @@
 # DESYSummerProject2023
-Júlia Laguna- DESY Summer School project 2023:  <br>
+Júlia Laguna- DESY Summer School project 2023.  <br>
 This project aims to accomplish two goals:
 - (Science verification) Study CTAO's expected performance at different construction stages.
 - (Monitoring layouts) Monitoring of different variable sources using sub-arrays. <br>
