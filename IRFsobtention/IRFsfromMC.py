@@ -1,6 +1,6 @@
 """
-Júlia's note: This code is not mine, I just have added a few items in order to use it for my project.
-Only the 71st and 72nd lines need to be changed (unless we require different parameters), so that the names file_gamma, file_proton and file_electron match
+Júlia's note: The detailed references are given on the report document. For this file I have only changed some lines to adapt it to my code.
+Comment for the reader: to run it on local, only the 71st and 72nd lines need to be changed (unless we require different parameters), so that the names file_gamma, file_proton and file_electron match
 the names of the files with the results of the MC simulations. Once this has been done, with running this file we
 will obtain the IRFs and differential senstivities, which will be stored in the outputfilename.
 Produced from the root output by this script:

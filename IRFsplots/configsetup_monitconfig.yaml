@@ -1,7 +1,8 @@
-# configuration.yaml file
 #This code has been inspired by sample codes provided at DESY.
+#Comment for the reader:
 #If none of the legend and text set-ups need to be changed, then only the LEGEND section for each configuration will need to be modified (whatever we type will appear as the legend on the plots).
-#This sample code is for comparing five simulations (the first one being alpha, which we use as the reference configuration to compute the PPUT values). If more configurations need to be compared, just copy paste the code as many times as needed.
+#This sample code is for comparing five simulations (the first one being alpha, which we use as the reference configuration to compute the PPUT values). If more configurations need to be compared, 
+#just copy paste the code as many times as needed.
 MAINOPTIONS:
     PLOT_IRF_COMPARISON: True
     OUTPUT_IRF_FOLDER: 'IRF_Files/'    
@@ -13,7 +14,7 @@ DL2-INPUTS:
     TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
     TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
     TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
-    OBS-TIME: {value: 5.0, unit: hour}   #This must be the same value with wich I run the python file
+    OBS-TIME: {value: 5.0, unit: hour}   
     SENSITIVITYMETHOD: 'gammapy' # fromhdu
     PLOTCOLOR: 'red'
     MARKERTYPE: 's'
@@ -23,7 +24,7 @@ DL2-INPUTS:
     TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
     TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
     TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
-    OBS-TIME: {value: 5.0, unit: hour} #This must be the same value with wich I run the python file
+    OBS-TIME: {value: 5.0, unit: hour} 
     SENSITIVITYMETHOD: 'gammapy' # fromhdu
     PLOTCOLOR: 'purple'
     MARKERTYPE: 's'
@@ -33,7 +34,7 @@ DL2-INPUTS:
     TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
     TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
     TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
-    OBS-TIME: {value: 5.0, unit: hour}   #This must be the same value with wich I run the python file
+    OBS-TIME: {value: 5.0, unit: hour}   
     SENSITIVITYMETHOD: 'gammapy' # fromhdu
     PLOTCOLOR: 'orange'
     MARKERTYPE: 's'
@@ -43,7 +44,7 @@ DL2-INPUTS:
     TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
     TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
     TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
-    OBS-TIME: {value: 5.0, unit: hour}   #This must be the same value with wich I run the python file
+    OBS-TIME: {value: 5.0, unit: hour}   
     SENSITIVITYMETHOD: 'gammapy' # fromhdu
     PLOTCOLOR: 'green'
     MARKERTYPE: 's'
@@ -53,7 +54,7 @@ DL2-INPUTS:
     TARGET_SPECTRUM_GAMMA: 'CRAB_HEGRA'   
     TARGET_SPECTRUM_PROTON: 'IRFDOC_PROTON_SPECTRUM'   
     TARGET_SPECTRUM_ELECTRON: 'IRFDOC_ELECTRON_SPECTRUM'   
-    OBS-TIME: {value: 5.0, unit: hour}   #This must be the same value with wich I run the python file
+    OBS-TIME: {value: 5.0, unit: hour}   
     SENSITIVITYMETHOD: 'gammapy' # fromhdu
     PLOTCOLOR: 'aquamarine'
     MARKERTYPE: 's'
