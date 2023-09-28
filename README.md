@@ -1,7 +1,7 @@
 
 Júlia Laguna- DESY Summer School project 2023.  <br>
 <br>
-This project aims to accomplish two goals:<br>
+This project aims to accomplish two goals realted to the `Cherenkov Telescope Array Observatory (CTAO) <https://www.cta-observatory.org/>`_  :<br>
 - (Science verification) Study CTAO's expected performance at different construction stages.<br>
 - (Monitoring layouts) Monitoring of different variable sources using sub-arrays. <br>
 <br>
@@ -18,6 +18,6 @@ At the beginning of the file we provide the instructions to run it, stating what
     · Extracts the light curves for the variable source and the expected detection (with the stated configurations).<br>
     · Fits the expected detection data to regain the original spectra.<br>
     <br>
-As a remark, the code is written so that the notebooks from the second and third folder can access the IRFs obtained and stored in the first folder. The licence is detailed in a separate file.  <br>
+As a remark, the code is written so that the notebooks from the second and third folder can access the IRFs obtained and stored in the first folder. The MIT licence for the repository is detailed in the separate LICENCE file.  <br>
 The report resulting from this summer project, using the code provided in this repository, is also provided in the pdf file in this repository. <br>
 Thank you!
