@@ -19,5 +19,5 @@ At the beginning of the file we provide the instructions to run it, stating what
     · Fits the expected detection data to regain the original spectra.<br>
     <br>
 As a remark, the code is written so that the notebooks from the second and third folder can access the IRFs obtained and stored in the first folder. The MIT licence for the repository is detailed in the separate LICENCE file.  <br>
-The report resulting from this summer project, using the code provided in this repository, is also provided in the pdf file in this repository. <br>
+The report that resulted from this summer project, and used this code, has also been uploaded as a PDF file in this repository. <br>
 Thank you!
